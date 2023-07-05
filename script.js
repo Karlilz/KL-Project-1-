@@ -1,9 +1,5 @@
-MY_API = Oym+WyayDAA1j/HCLtt8Kw==oZmnwwtgt5FdnvFh 
-
-
-
 // Constants and Variables
-const API_KEY = config.MY_KEY; 
+const MY_API = 'Oym+WyayDAA1j/HCLtt8Kw==oZmnwwtgt5FdnvFh'; 
 const BASE_URL = 'https://api.api-ninjas.com/v1/nutrition?query='; 
  
 let weatherData, userInput;
@@ -26,7 +22,9 @@ function handleGetData(event) {
     event.preventDefault();
     userInput = input.val();
      $.ajax({
-      url: `https://api.api-ninjas.com/v1/nutrition?query=${userInput}&appid=${API_KEY}`
+      method: 'GET',
+      url: `https://api.api-ninjas.com/v1/nutrition?query=${userInput}`,
+      headers: { 'X-Api-Key': MY_API},
     }).then(
       (data) => {
           nutritionalData = data;
@@ -37,14 +35,27 @@ function handleGetData(event) {
       }
   );
 } 
+// "name": "apple",
+//         "calories": 53.0,
+//         "serving_size_g": 100.0,
+//         "fat_total_g": 0.2,
+//         "fat_saturated_g": 0.0,
+//         "protein_g": 0.3,
+//         "sodium_mg": 1,
+//         "potassium_mg": 11,
+//         "cholesterol_mg": 0,
+//         "carbohydrates_total_g": 14.1,
+//         "fiber_g": 2.4,
+//         "sugar_g": 10.3
 
 function render(nutritionalData) {
-  title.text(weatherData.name);
-  // Use Math.round to round to nearest whole number and + "°F" to get temp value in Fahrenheit
-  temperature.text(Math.round(nutritionalData.main.temp)); 
-  index.text(Math.round(weatherData.main.feels_like)); 
-  description.text(weatherData.weather[0].description);
-  input.text(weatherData.input);
+    food.text(nutritionalData.name);
+    servingSize.text(nutritionalData.serving_size_g); 
+    calories.text(nutritionalData.calories);
+    totalFats.text(nutritionalData.fat_total_g);
+    carbohydrates.text(nutritionalData.carbohydrates_total_g);
+    protein.text(nutritionalData.protein_g);
+    input.text(nutritionalData.input);
 }
 
 
