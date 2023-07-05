@@ -2,7 +2,7 @@
 const MY_API = 'Oym+WyayDAA1j/HCLtt8Kw==oZmnwwtgt5FdnvFh'; 
 const BASE_URL = 'https://api.api-ninjas.com/v1/nutrition?query='; 
  
-let weatherData, userInput;
+let nutritionalData, userInput;
 
 // Cached Element References 
 const food = $('#food');
@@ -24,7 +24,7 @@ function handleGetData(event) {
      $.ajax({
       method: 'GET',
       url: `https://api.api-ninjas.com/v1/nutrition?query=${userInput}`,
-      headers: { 'X-Api-Key': MY_API},
+      headers: {'X-Api-Key': MY_API},
     }).then(
       (data) => {
           nutritionalData = data;
@@ -50,12 +50,12 @@ function handleGetData(event) {
 
 function render(nutritionalData) {
     food.text(nutritionalData.name);
-    servingSize.text(nutritionalData.serving_size_g); 
+    servingSize.text(nutritionalData.serving_size_g);
     calories.text(nutritionalData.calories);
     totalFats.text(nutritionalData.fat_total_g);
     carbohydrates.text(nutritionalData.carbohydrates_total_g);
     protein.text(nutritionalData.protein_g);
-    input.text(nutritionalData.input);
+    input.val(userInput);
 }
 
 
