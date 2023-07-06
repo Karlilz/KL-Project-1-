@@ -27,7 +27,7 @@ function handleGetData(event) {
       headers: {'X-Api-Key': MY_API},
     }).then(
       (data) => {
-          nutritionalData = data;
+          nutritionalData = data.data;
           render(nutritionalData);
       },
       (error) => {
@@ -35,7 +35,7 @@ function handleGetData(event) {
       }
   );
 } 
-// "name": "apple",
+//         "name": "apple",
 //         "calories": 53.0,
 //         "serving_size_g": 100.0,
 //         "fat_total_g": 0.2,
@@ -57,5 +57,7 @@ function render(nutritionalData) {
     protein.text(nutritionalData.protein_g);
     input.val(userInput);
 }
+
+
 
 
