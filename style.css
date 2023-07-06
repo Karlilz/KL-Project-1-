@@ -1,6 +1,6 @@
 
 h1 {
-    color: #000000;
+    color: #2d754e;
     text-align: center;
     font-family: arial, sans-serif;
     font-size: 100px;
@@ -10,14 +10,23 @@ h1 {
     }
 
 h2 {
+    color: #000000;
     text-align: center;
     font-size: 30px;
     font-family: arial, sans-serif;
 }
 
-form {
-    size: 50px;
-}
+input[type="text"] {
+    width: 15%;
+    height: 30px;
+  }
+  
+  input[type="submit"] {
+    width: 20%;
+    height: 30px;
+    color: black;
+  }
+
 .relatedPages {
     font-size: 20px;
     font-weight: bold;
@@ -28,18 +37,14 @@ form {
     box-sizing: content-box;
     width: 100%;
     height: fit-content;
-    border: solid #e0dbdb; 1px;
+    margin: 10px 10px 10px 10px;
+    border: solid #e0dbdb; 
     background: #e0dbdb;
-    padding: 5px;
+    padding: 30px;
     display: grid;
     justify-self: stretch;
-    grid-template-columns: 5fr 5fr 5fr 5fr;
-    text align: center;
-    
+    grid-template-columns: 10fr 10fr 10fr 10fr;
+    text-align: center;
+    text-transform: capitalize; 
 }
-
-
-
-
-
 
