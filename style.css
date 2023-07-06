@@ -24,83 +24,22 @@ form {
     font-family: arial, sans-serif;
 }
 
-.box1 {
+.boxes {
     box-sizing: content-box;
-    width: 25%;
-    border: solid #e0dbdb; 10px;
+    width: 100%;
+    height: fit-content;
+    border: solid #e0dbdb; 1px;
     background: #e0dbdb;
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: stretch;
+    grid-template-columns: 5fr 5fr 5fr 5fr;
+    text align: center;
+    
 }
 
-.box2 {
-    box-sizing: content-box;
-    width: 25%;
-    border: solid #ee0dbdb; 10px;
-    background-color: #e0dbdb;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
-.box3 {
-    box-sizing: content-box;
-    width: 25%;
-    border: solid #e0dbdb; 10px;
-    background-color: #e0dbdb;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
-.box4 {
-    box-sizing: content-box;
-    width: 25%;
-    border: solid #e0dbdb; 10px;
-    background-color: #e0dbdb;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
-.box5 {
-    box-sizing: content-box;
-    width: 25%;
-    border: solid #e0dbdbd; 10px;
-    background-color: #e0dbdb;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
-.box6 {
-    box-sizing: content-box;
-    width: 25%;
-    border: solid #e0dbdb; 10px;
-    background-color: #e0dbdb;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.box7 {
-    box-sizing: content-box;
-    width: 25%;
-    border: solid #e0dbdb; 10px;
-    background-color: #e0dbdb;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.box8 {
-    box-sizing: content-box;
-    width: 25%;
-    border: solid #e0dbdb; 10px;
-    background-color: #e0dbdb;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
