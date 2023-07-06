@@ -4,7 +4,7 @@ const BASE_URL = 'https://api.api-ninjas.com/v1/nutrition?query=';
  
 let nutritionalData, userInput;
 
-// Cached Element References 
+
 const food = $('#food');
 const servingSize = $('#servingSize');
 const calories = $('#calories');
@@ -14,27 +14,42 @@ const protein = $('#protein');
 const input = $('input[type="text"]');
 const form = $('form');
 
-// Event Listeners
+
 $('form').on('submit', handleGetData);
 
-// Functions
+
 function handleGetData(event) {
     event.preventDefault();
     userInput = input.val();
-     $.ajax({
-      method: 'GET',
-      url: `https://api.api-ninjas.com/v1/nutrition?query=${userInput}`,
-      headers: {'X-Api-Key': MY_API},
-    }).then(
-      (data) => {
-          nutritionalData = data.data;
-          render(nutritionalData);
-      },
-      (error) => {
-        alert("Invalid Request. Please try again")
-      }
-  );
-} 
+    $.ajax({
+        method: 'GET',
+        url: 'https://api.api-ninjas.com/v1/nutrition?query=' + userInput,
+        headers: { 'X-Api-Key': MY_API},
+        contentType: 'application/json',
+        success: function(result) {
+            render(result);
+        },
+        error: function ajaxError(jqXHR) {
+            console.error('Error: ', jqXHR.responseText);
+        }
+    });
+}
+//      $.ajax({
+//       method: 'GET',
+//       url: `https://api.api-ninjas.com/v1/nutrition?query=${userInput}`,
+//       headers: {'X-Api-Key': MY_API},
+//     }).then(
+//       (data) => {
+//           nutritionalData = data;
+//           render(nutritionalData);
+//       },
+//       (error) => {
+//         alert("Invalid Request. Please try again")
+//       }
+//   );
+// } 
+
+
 //         "name": "apple",
 //         "calories": 53.0,
 //         "serving_size_g": 100.0,
@@ -56,8 +71,5 @@ function render(nutritionalData) {
     carbohydrates.text(nutritionalData.carbohydrates_total_g);
     protein.text(nutritionalData.protein_g);
     input.val(userInput);
+    console.log(nutritionalData.name)
 }
-
-
-
-
