@@ -3,7 +3,7 @@ h1 {
     color: #000000;
     text-align: center;
     font-family: arial, sans-serif;
-    font-size: 60px;
+    font-size: 100px;
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 1px;
@@ -11,5 +11,96 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 30px;
+    font-family: arial, sans-serif;
+}
+
+form {
+    size: 50px;
+}
+.relatedPages {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+}
+
+.box1 {
+    box-sizing: content-box;
+    width: 25%;
+    border: solid #e0dbdb; 10px;
+    background: #e0dbdb;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box2 {
+    box-sizing: content-box;
+    width: 25%;
+    border: solid #ee0dbdb; 10px;
+    background-color: #e0dbdb;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box3 {
+    box-sizing: content-box;
+    width: 25%;
+    border: solid #e0dbdb; 10px;
+    background-color: #e0dbdb;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box4 {
+    box-sizing: content-box;
+    width: 25%;
+    border: solid #e0dbdb; 10px;
+    background-color: #e0dbdb;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box5 {
+    box-sizing: content-box;
+    width: 25%;
+    border: solid #e0dbdbd; 10px;
+    background-color: #e0dbdb;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box6 {
+    box-sizing: content-box;
+    width: 25%;
+    border: solid #e0dbdb; 10px;
+    background-color: #e0dbdb;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box7 {
+    box-sizing: content-box;
+    width: 25%;
+    border: solid #e0dbdb; 10px;
+    background-color: #e0dbdb;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box8 {
+    box-sizing: content-box;
+    width: 25%;
+    border: solid #e0dbdb; 10px;
+    background-color: #e0dbdb;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
