@@ -49,3 +49,6 @@ input[type="text"] {
     text-transform: capitalize; 
 }
 
+.ratioInput {
+    margin-top: 12px;
+}

@@ -2,7 +2,7 @@
 const MY_API = 'Oym+WyayDAA1j/HCLtt8Kw==oZmnwwtgt5FdnvFh'; 
 const BASE_URL = 'https://api.api-ninjas.com/v1/nutrition?query='; 
  
-let nutritionalData, userInput;
+let userInput;
 
 const food = $('#food');
 const servingSize = $('#servingSize');
@@ -12,10 +12,19 @@ const cholesterol = $('#cholesterol');
 const sodium = $('#sodium');
 const carbohydrates = $('#carbohydrates');
 const protein = $('#protein');
-const input = $('input[type="text"]');
+const input = $('#foodInput');
 const form = $('form');
+const insulinRatioInput = $('#insulinRatioInput')
+
+let carbValue;
 
 $('form').on('submit', handleGetData);
+insulinRatioInput.keyup(function(){
+    insulinRatio = insulinRatioInput.val();
+    let units = carbValue / insulinRatio;
+    $('#units').text(units);
+});
+
 
 function handleGetData(event) {
   event.preventDefault();
@@ -26,16 +35,10 @@ function handleGetData(event) {
   }).then(
     (data) => {
         if (data.length === 0) alert('Invalid input. Food name is undefined.');
-      nutritionalData = data;
-      render(nutritionalData);
+      render(data);
     },
-//     (error) => {
-//       if (food.name === undefined) {
-//         alert("Invalid input. Food name is undefined.");
-//       }
-//     }
-//   );
-// }
+  );
+}
 
 function render(nutritionalData) {
   const foodData = nutritionalData[0];
@@ -45,6 +48,8 @@ function render(nutritionalData) {
   totalFats.text(Math.round(foodData.fat_total_g) + "g");
   cholesterol.text(Math.round(foodData.cholesterol_mg) + "mg");
   sodium.text(Math.round(foodData.sodium_mg) + "mg");
-  carbohydrates.text(Math.round(foodData.carbohydrates_total_g) + "g");
+  carbValue = Math.round(foodData.carbohydrates_total_g);
+  carbohydrates.text(carbValue + "g");
   protein.text(Math.round(foodData.protein_g) + "g");
 }
+
