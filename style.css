@@ -13,6 +13,7 @@ h2 {
     color: #000000;
     text-align: center;
     font-size: 30px;
+    padding: 1px;
     font-family: arial, sans-serif;
 }
 
@@ -36,7 +37,7 @@ input[type="text"] {
 .boxes {
     box-sizing: content-box;
     width: 100%;
-    height: fit-content;
+    height: fit-content; */
     margin: 10px 10px 10px 10px;
     border: solid #e0dbdb; 
     background: #e0dbdb;
