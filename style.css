@@ -15,6 +15,15 @@ h2 {
     font-size: 30px;
     padding: 1px;
     font-family: arial, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 35px;
+    color: #2d754e;
+    font-weight: bold;
+    font-family: arial, sans-serif;
 }
 
 input[type="text"] {
@@ -28,12 +37,6 @@ input[type="text"] {
     color: black;
     background-color: #cec7c7;
   }
-
-/* .relatedPages {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: arial, sans-serif;
-} */
 
 .boxes {
     box-sizing: content-box;
@@ -52,10 +55,13 @@ input[type="text"] {
 }
 
 .ratioInput {
-    margin-top: 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #e0dbdb
 }
 
 #units {
     font-size: large;
-    
+    color: #000000;
+    font-weight: bold;
 }
