@@ -24,22 +24,23 @@ input[type="text"] {
   
   input[type="submit"] {
     width: 20%;
-    height: 30px;
+    height: 35px;
     color: black;
+    background-color: #cec7c7;
   }
 
-.relatedPages {
+/* .relatedPages {
     font-size: 20px;
     font-weight: bold;
     font-family: arial, sans-serif;
-}
+} */
 
 .boxes {
     box-sizing: content-box;
     width: 100%;
-    height: fit-content; */
+    height: fit-content; 
     margin: 10px 10px 10px 10px;
-    border: solid #e0dbdb; 
+    margin-top: 12px;
     background: #e0dbdb;
     padding: 30px;
     display: grid;
@@ -47,8 +48,14 @@ input[type="text"] {
     grid-template-columns: 10fr 10fr 10fr 10fr;
     text-align: center;
     text-transform: capitalize; 
+    font-size: large;
 }
 
 .ratioInput {
     margin-top: 12px;
+}
+
+#units {
+    font-size: large;
+    
 }
