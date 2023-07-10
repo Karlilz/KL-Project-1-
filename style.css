@@ -68,12 +68,18 @@ input[type="text"] {
 
 #units {
     font-size: large;
-    color: #000000;
+    color: #0546ed;
     font-weight: bold;
+    letter-spacing: 1px;
+    font-size: large;
 }
 
 .tips {
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: #e0dbdb
+}
+
+input[id=insulinRatioInput] {
+    width: 18%;
 }
