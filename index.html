@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>Nom Nom Nom</h1>
-    <h2>Food Nutrition Made Easy</h2>
+    <h2>Food Nutrition Made Easy for Calculating Insulin Dose</h2>
 
     <form>
         <input type="text" id="foodInput" placeholder="Search Food">
@@ -63,18 +63,31 @@
                 </p>
         </div>
 
+        <div class="insulinRatio">
+            <h3><strong><u>Insulin-to-Carb Ratios</u></strong></h3>
+            <p> The insulin-to-carb ratio means the grams of carbohydrates (CHO) one unit of rapid-acting insulin covers to make sure that blood glucose lies within the desired limit.</p>
+            <p>The carb ratio is often set by a healthcare provider when diabetes is diagnosed but needs updating regularly. Different people have different insulin-to-carb ratios. The ratio may change over the course of
+            your lifetime or even throughout the day. Some people have one ratio for breakfast and a different ratio for
+            lunch and dinner. </p>
+            <p>For example, some people might take 1 unit for every 10 grams of carb. Others might take 1:15. </p>
+        </div>
+
+
         <div class="ratioInput">
-            <p>
-            <input type="text" id="insulinRatioInput" placeholder="Input Your Insulin-Carb Ratio">
+            <p> To calculate how much insulin you will need for a certain food, use the following formula:</p>
+            <p> Insulin dose = Total grams of carbohydrates in the meal ÷ denominator of the Insulin:CHO ratio</p>
+
+            <input type="text" id="insulinRatioInput" placeholder="Input Your Insulin-Carb Ratio Denominator">
             <span><strong>Units Needed:</strong></span> 
             <span id="units"></span>
             </p>
         </div>
 
-    <h3><strong><u>Helpful Tips For Calculating Insulin Units</u></strong></h3>
-        <p> - If your blood suagr level is on the higher side <strong>round up</strong> the total units you will give yourself<p>
-        <p> - If your blood sugar level is on the lower side <strong>round down</strong> the total units you will give yourself given</p>
-    
+        <div class="tips">
+            <h3><strong><u>Helpful Tips For Calculating Insulin Units</u></strong></h3>
+            <p> - If your blood suagr level is on the higher side <strong>round up</strong> the total units you will give yourself<p>
+            <p> - If your blood sugar level is on the lower side <strong>round down</strong> the total units you will give yourself given</p>
+        </div>
   
     </main>
 </body>
