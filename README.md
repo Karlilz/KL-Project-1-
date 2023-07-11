@@ -66,7 +66,7 @@ As a type 1 diabtic, eating a healthy diet is necessary to help me:
 
 When it comes to food, it is important to check the nutritional label and specifically be informed about how many carbohydrates I am consuming. As the body digests carbohydrates, they are converted into glucose, which becomes the primary fuel source for the body. The level of carbohydrates consumed in a meal has the greatest impact on the blood glucose levels. 
 
-I have created this application, to allow anyone to search a food by its name and recive the nutrional value of it back. This is benefical to type 1 diabetics to help them make informed decesions on insulin calculations. 
+I have created this application, to allow anyone to search a food by its name and recive the nutrional value of it back. This is benefical for diabetics to help them make informed decesions on insulin calculations. 
 
 Nutritonal Values Returened:
 * Serving Size 
@@ -101,23 +101,7 @@ Link to helpful resources also included!
 
 <!-- ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 
 
@@ -184,25 +168,6 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-<!-- ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
