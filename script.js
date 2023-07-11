@@ -19,11 +19,25 @@ const insulinRatioInput = $('#insulinRatioInput')
 
 let carbValue;
 
+// $('form').on('submit', handleGetData);
+// insulinRatioInput.keyup(function(){
+//     insulinRatio = insulinRatioInput.val();
+//     let units = carbValue / insulinRatio;
+//     $('#units').text(units);
+// });
+
+let carbValue;
+
 $('form').on('submit', handleGetData);
-insulinRatioInput.keyup(function(){
-    insulinRatio = insulinRatioInput.val();
+insulinRatioInput.keyup(function() {
+  insulinRatio = insulinRatioInput.val();
+  
+  if (insulinRatio != 0 && carbValue != 0) {
     let units = carbValue / insulinRatio;
     $('#units').text(units);
+  } else {
+    $('#units').text("Invalid ratio or carb value");
+  }
 });
 
 

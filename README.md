@@ -64,7 +64,7 @@ The final step was deploying my webpage to github pages.
 
 ---
 ### Unsolved Problems 
-The functionality of my application was successful, so fortunatley I did not have any unsolved problems with my project. I did, however, wish I could have included a few more elements on my webpage to make it have a more modern and exciting look. Some features I had in mind were: 
+The functionality of my application was overall successful. One minor feature I would consider a problem is when the individual changes the denominator in the input box, the is a moment were it reads "units needed: infinity". This is obviously not correct. I do also wish I could have included a few more elements on my webpage to make it have a more modern and exciting look. Some features I had in mind were: 
   * Including icon images by my h1 tag 
   * Including the units of measurement (mL) for the insulin calcualtor feature
   * Using another API to provide an image of the food item searched 
