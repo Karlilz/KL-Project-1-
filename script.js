@@ -1,5 +1,6 @@
 
-const MY_API = 'Oym+WyayDAA1j/HCLtt8Kw==oZmnwwtgt5FdnvFh'; 
+const MY_API = config.MY_KEY;
+// Oym+WyayDAA1j/HCLtt8Kw==oZmnwwtgt5FdnvFh'; 
 const BASE_URL = 'https://api.api-ninjas.com/v1/nutrition?query='; 
  
 let userInput;
