@@ -73,3 +73,4 @@ The functionality of my application was successful, so fortunatley I did not hav
 ### Links
   * [GitHub](https://karlilz.github.io/KL-Project-1-/)
   * [API](https://api-ninjas.com/api/nutrition)
+  * [Lucid](https://lucid.app/lucidchart/4a36aaeb-d2c0-49e8-87cf-34cb9bb86090/edit?viewport_loc=67%2C-191%2C1301%2C701%2C0_0&invitationId=inv_0a106669-dedc-4d44-ae14-1c08ef48f2cb)
