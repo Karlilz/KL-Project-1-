@@ -92,7 +92,7 @@ Link to helpful resources also included!
 - Google Fonts 
 
 ### Wireframe 
-![**Project 1 Wireframe**](images/wireframe.jpeg)
+![**Project 1 Wireframe**](images/finalwireframe.jpeg)
 
 
 <!-- GETTING STARTED -->
