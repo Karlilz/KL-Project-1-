@@ -2,7 +2,7 @@
 h1 {
     color: #2d754e;
     text-align: center;
-    font-family: arial, sans-serif;
+    font-family: ;
     font-size: 100px;
     font-weight: bold;
     margin-top: 0px;
@@ -79,13 +79,13 @@ input[type="text"] {
 .insulinRatioInfo {
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: #e0dbdb
+    /* background-color: #e0dbdb */
 }
 
 .insulinRatioCalculator {
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: #e0dbdb
+    /* background-color: #e0dbdb */
 }
 
 #units {
@@ -111,7 +111,7 @@ input[type="text"] {
 .tips {
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: #e0dbdb
+    /* background-color: #e0dbdb */
 }
 
 input[id=insulinRatioInput] {

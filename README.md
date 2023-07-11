@@ -1,63 +1,6 @@
 <div id="top"></div>
 
-
-<!-- PROJECT LOGO -->
-<!-- <br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
-</div> -->
-
-
-
-<!-- TABLE OF CONTENTS
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details> -->
-
-
-
-<!-- ABOUT THE PROJECT -->
 ### About The Project
-
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 As a type 1 diabtic, eating a healthy diet is necessary to help me:
 * Better manage my blood glucose levels
@@ -66,7 +9,7 @@ As a type 1 diabtic, eating a healthy diet is necessary to help me:
 
 When it comes to food, it is important to check the nutritional label and specifically be informed about how many carbohydrates I am consuming. As the body digests carbohydrates, they are converted into glucose, which becomes the primary fuel source for the body. The level of carbohydrates consumed in a meal has the greatest impact on the blood glucose levels. 
 
-I have created this application, to allow anyone to search a food by its name and recive the nutrional value of it back. This is benefical for diabetics to help them make informed decesions on insulin calculations. 
+I created Nom Nom Nom, to allow anyone to search a food by its name and recive the nutrional value of it back. With the insulin:carb ratio calculator feature, this app will be especially benefical for diabetics to help them make informed decesions on insulin calculations for meals. 
 
 Nutritonal Values Returened:
 * Serving Size 
@@ -81,123 +24,44 @@ Nutritonal Values Returened:
 Link to helpful resources also included! 
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
-
 - HTML5
 - CSS3
 - JavaScript
 - jQuery
 - Google Fonts 
 
-### Wireframe 
+
+
+### Approach Taken 
+The initial step for my project was to create the file and folder structure for HTML, CSS, and JS. The following was then done for each file: 
+
+1. HTML 
+    - Included a search input field, a search button, a section to display the nutrition information, and a section to input ones insulin-to-carb ratio.
+2. JS
+    - My main function in JS was to retrieve and display the user's search input when they submit the search form and click the search button.
+    - Used the HTTP method, "GET", to send requests to the nutrition API I found. I include the user's search query as a parameter in the request URL to retrieve relevant nutrition data.
+    - jQuery was used to make an asynchronous HTTP request and extract the nutritional information requested. 
+    - Implemented an error alert to display in cases where the API request failes or returns an error.
+    - Created an input box for the insulin:carb ration for users to be able to calculate how many units of insulin they would need (based on the carbohydrates) for the food they just searched. 
+  3. CSS
+    - Applied styling to my HTML elements to make my webpage more visually appealing and user-friendly.
+
+
+My final step of the project was deploying my webpage to github pages. 
+
+
+### Initial Wireframe 
 ![**Project 1 Wireframe**](images/finalwireframe.jpeg)
 
 
-<!-- GETTING STARTED -->
-<!-- ## Getting Started
 
-
-<!-- ### Installation
-
+### Unsolved Problems 
+XXXX
 
 
 
 
-<!-- USAGE EXAMPLES -->
-<!-- ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-
-
-<!-- ROADMAP -->
-<!-- ## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-
-
-<!-- CONTRIBUTING -->
-<!-- ## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-
-
-<!-- LICENSE -->
-<!-- ## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-
-
-<!-- CONTACT -->
-<!-- ## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p> -->
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com  -->
+### Links
+XXX
